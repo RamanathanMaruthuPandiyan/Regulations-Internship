@@ -1,0 +1,243 @@
+{
+    "_id": "", // ObjectId()
+    "regulationId": "",
+    "prgm": {
+        "id": "", //ObjectId
+        "category": "", //category of programme
+        "name": "" //name of programme
+    },
+    "semester": 1, //Number
+    "code": "", //course code
+    "title": "", //course title
+    "type": "", //course type -> Theory / project / field work
+    "category": "", //course category -> PROFESSIONAL CORE / elective / optional
+    "status": "", //This is the course status DR,CO,WA,RC,AP
+    "mappingStatus": "", //This is the mapping status DR,WA,RC,AP
+    "evalPattern": {
+        "id": "", //ObjectId - evaluation pattern for the course
+        "name": "", // Name of the evaluation pattern
+        "markSplitUp": {
+            "CA": 40,
+            "FE": 60,
+            "total": 200
+        }
+    },
+    "ltpc": {
+        "id": "", //ObjectId - credit pattern of the course
+        "name": "", //Name of the credit pattern
+        "hoursPerWeek": {
+            "lecture": 3,
+            "tutorial": 1,
+            "practical": 2
+        },
+        "credits": 3
+    },
+    "prerequisites": [
+        {
+            "courseCode": "", //code of course
+            "courseId": "" //ObjectId
+        }
+    ],
+    "partType": 1, //Number
+    "isVertical": true, //Boolean
+    "vertical": "",
+    "offeringDept": {
+        "id": "",
+        "category": "",
+        "name": ""
+    },
+    "isPlaceholder": false, // Boolean
+    "co": { //This is the course outcomes
+        "CO1": {
+            "description": "",
+            "taxonomy": [],
+            "weightage": 0.2
+        },
+        "CO2": {
+            "description": "CO1",
+            "taxonomy": [],
+            "weightage": 0.2
+        }
+    },
+    "mapping": { // This is the CO-PO mapping
+        "PO1": {
+            "CO1": "", //Here the values can be L-low, M-medium and S-strong
+            "CO2": "",
+            "CO3": ""
+        }
+    },
+    "coUploaders": [
+        //User Id (Faculty)
+    ]
+}
+/*
+    // Mandatory Course :
+        {
+            "_id": ObjectId("66d82e0cb2046abeb9b96562"),
+            "regulationId": ObjectId("66d82a57b2046abeb9b964b1"),
+            "prgm": {
+                "id": ObjectId("649e7e0c9bde6459dcbf9ebc"),
+                "name": "BE MECHANICAL ENGINEERING",
+                "category": "SELF-SUPPORTING"
+            },
+            "semester": 1,
+            "code": "MA3251",
+            "title": "STATISTICS AND NUMERICAL METHODS",
+            "type": "T",
+            "category": "MC",
+            "status": "CO",
+            "mappingStatus": "DR",
+            "ltpc": {
+                "hoursPerWeek": {
+                    "lecture": 3,
+                    "tutorial": 1,
+                    "practical": 0
+                },
+                "credits": 4,
+                "id": ObjectId("66c0195d1e3e2711e8141bb7"),
+                "name": "LTPC_3104"
+            },
+            "prerequisites": [],
+            "partType": "III",
+            "isVertical": false,
+            "vertical": null,
+            "isPlaceholder": false,
+            "evalPattern": {
+                "id": ObjectId("66d82c20d898fb8bdf7abbb5"),
+                "name": "CA_100_T",
+                "markSplitUp": {
+                    "CA": 100,
+                    "FE": 0,
+                    "total": 100
+                }
+            },
+            "offeringDept": {
+                "id": ObjectId("649e7b689bde6459dcbf9eba"),
+                "name": "MECHANICAL ENGINEERING",
+                "category": "SELF-SUPPORTING"
+            },
+            "co": {
+                "CO1": {
+                    "description": "CO1",
+                    "taxonomy": [
+                        "AN"
+                    ],
+                    "weightage": 0.2
+                }
+            },
+            "mapping": {
+                "PO1": {
+                    "CO1": "L",
+                    "CO2": "L",
+                    "CO3": "L"
+                }
+            },
+            "coUploaders": [
+                "I0003"
+            ]
+        }
+
+    // If one elective must be studied in first sem
+        {
+            "_id": ObjectId("66d82e0cb2046abeb9b96570"),
+            "regulationId": ObjectId("66d82a57b2046abeb9b964b1"),
+            "prgm": {
+            "id": ObjectId("649e7e0c9bde6459dcbf9ebc"),
+            "name": "BE MECHANICAL ENGINEERING",
+            "category": "SELF-SUPPORTING"
+            },
+            "semester": 1,
+            "code": "ELEC11",
+            "title": "PROFESSIONAL ELECTIVE",
+            "type": "T",
+            "category": "PE",
+            "status": "CO",
+            "mappingStatus": "DR",
+            "ltpc": {
+            "hoursPerWeek": {
+                "lecture": 2,
+                "tutorial": 0,
+                "practical": 0
+            },
+            "credits": 2,
+            "id": ObjectId("66c0195d1e3e2711e8141bbd"),
+            "name": "LTPC_2002"
+            },
+            "prerequisites": [],
+            "partType": "III",
+            "isVertical": false,
+            "vertical": null,
+            "isPlaceholder": true,
+            "evalPattern": {
+            "id": ObjectId("66d82c20d898fb8bdf7abbb5"),
+            "name": "CA_100_T",
+            "markSplitUp": {
+                "CA": 100,
+                "FE": 0,
+                "total": 100
+            }
+            },
+            "offeringDept": {
+            "id": ObjectId("649e7b689bde6459dcbf9eba"),
+            "name": "MECHANICAL ENGINEERING",
+            "category": "SELF-SUPPORTING"
+            },
+            "co": {},
+            "mapping": {},
+            "coUploaders": [
+                "I0003"
+            ]
+        }
+
+    // elective courses
+        {
+            "_id": ObjectId("66d82e0cb2046abeb9b965a6"),
+            "regulationId": ObjectId("66d82a57b2046abeb9b964b1"),
+            "prgm": {
+                "id": ObjectId("649e7e0c9bde6459dcbf9ebc"),
+                "name": "BE MECHANICAL ENGINEERING",
+                "category": "SELF-SUPPORTING"
+            },
+            "semester": null,
+            "code": "CAU332",
+            "title": "DYNAMICS OF GROUND VEHICLES",
+            "type": "T",
+            "category": "PE",
+            "status": "CO",
+            "mappingStatus": "DR",
+            "ltpc": {
+                "hoursPerWeek": {
+                    "lecture": 0,
+                    "tutorial": 3,
+                    "practical": 0
+                },
+                "credits": 3,
+                "id": ObjectId("66c0195d1e3e2711e8141bd4"),
+                "name": "LTPC_0303"
+            },
+            "prerequisites": [],
+            "partType": "III",
+            "isVertical": false,
+            "vertical": null,
+            "isPlaceholder": false,
+            "evalPattern": {
+                "id": ObjectId("66d82c20d898fb8bdf7abbb5"),
+                "name": "CA_100_T",
+                "markSplitUp": {
+                    "CA": 100,
+                    "FE": 0,
+                    "total": 100
+                }
+            },
+            "offeringDept": {
+                "id": ObjectId("649e7b689bde6459dcbf9eba"),
+                "name": "MECHANICAL ENGINEERING",
+                "category": "SELF-SUPPORTING"
+            },
+            "co": {},
+            "mapping": {},
+            "coUploaders": [
+                "I0003"
+            ]
+        }
+*/

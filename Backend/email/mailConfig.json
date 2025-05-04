@@ -1,0 +1,10 @@
+{
+    "REGULATION": {
+        "subject": " ",
+        "file": "regChangeStatus.handlebars"
+    },
+    "SCHEME": {
+        "subject": " ",
+        "file": "coursesChangeStatus.handlebars"
+    }
+}

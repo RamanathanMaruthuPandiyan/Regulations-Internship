@@ -1,0 +1,17 @@
+{
+    "_id": "", //ObjectId
+    "entity": "", //In which entity it has been done.
+    "action": "", //What type of action ex:- state change, update, delete, freeze semester etc.
+    "on": "", //ISODate
+    "by": "", //The user name.
+    "msg": "" //What type of operation done in detail.
+}
+//sample record
+/*{
+    "_id": ObjectId("66c6e28c5d4d8dadba5353ff"),
+    "entity": "ATTRIBUTES",
+    "action": "UPDATE",
+    "on": ISODate("2024-08-22T07:02:36.656+0000"),
+    "by": "SYSADMIN",
+    "msg": "Added 'TEST-T' to 'Course Category' attribute."
+}*/

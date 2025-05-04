@@ -1,0 +1,23 @@
+{
+    "_id": "", //ObjectId
+    "batchYear": 2024, //batch year
+    "category": "", //category of programme
+    "dept": "", //name of department
+    "prgm": "", //name of programme
+    "prgmId": "", //ObjectId
+    "sectionId": "", //ObjectId
+    "sectionName": "", //name of section
+    "status": "" //Wheather the batch year is active or not if it is active means it will be mentioned as A
+}
+//sample record
+/*{
+    "_id": ObjectId("649e7f2f9bde6459dcbf9ec1"),
+    "batchYear": 2022,
+    "category": "SELF-SUPPORTING",
+    "dept": "MECHANICAL ENGINEERING",
+    "prgm": "BE MECHANICAL ENGINEERING",
+    "prgmId": ObjectId("649e7e0c9bde6459dcbf9ebc"),
+    "sectionId": ObjectId("649e7e369bde6459dcbf9ebf"),
+    "sectionName": "A",
+    "status": "A"
+}*/

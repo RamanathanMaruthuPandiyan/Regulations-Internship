@@ -1,0 +1,9 @@
+Bootstrap - https://react-bootstrap.netlify.app/docs/layout/grid
+Date Picker - https://www.npmjs.com/package/react-datetime-picker
+Select Box -https://react-select.com/home
+Validation - https://www.react-hook-form.com/
+File Upload - https://github.com/react-dropzone/react-dropzone/
+Input Tags - https://www.npmjs.com/package/react-tag-input
+Tinymc - https://www.tiny.cloud/docs/integrations/react/#tinymcereactintegrationquickstartguide
+Full Calendar - https://fullcalendar.io/docs/react
+Charts - https://github.com/recharts/recharts

@@ -1,0 +1,147 @@
+{
+    "_id": "", //ObjectId"
+    "name": "", //field name used in other collections
+    "displayName": "", //to show in UI
+    "values": [
+        {
+            "shortName": "",
+            "name": ""
+        }
+    ], //array of object of values accepted for the attribute
+    "readOnly": true, //user can't edit the value
+    "module": "" //For which module
+}
+/*
+{
+    Sample RecordS  : [
+        {
+            "name": "Category",
+            "displayName": "Course Category",
+            "values": [
+                {
+                    "shortName": "BS",
+                    "name": "BASIC SCIENCE"
+                },
+                {
+                    "shortName": "HS",
+                    "name": "HUMANITIES AND SOCIAL SCIENCE"
+                },
+                {
+                    "shortName": "ES",
+                    "name": "ENGINEERING SCIENCE"
+                },
+                {
+                    "shortName": "PC",
+                    "name": "PROFESSIONAL CORE"
+                },
+                {
+                    "shortName": "EEC",
+                    "name": "EMPLOYABILITY ENHANCEMENT COURSE"
+                },
+                {
+                    "shortName": "PE",
+                    "name": "PROFESSIONAL ELECTIVE"
+                },
+                {
+                    "shortName": "OE",
+                    "name": "OPEN ELECTIVE"
+                }
+            ],
+            "module": "regulations"
+        },
+        {
+            "name": "type",
+            "displayName": "Course Type",
+            "values": [
+                {
+                    "shortName": "TH",
+                    "name": "THEORY"
+                },
+                {
+                    "shortName": "LA",
+                    "name": "Laboratory LABORATORY"
+                },
+                {
+                    "shortName": "PW",
+                    "name": "PROJECT WORK"
+                },
+                {
+                    "shortName": "IVL",
+                    "name": "INDUSTRIAL VISIT AND LECTURE"
+                },
+                {
+                    "shortName": "CTD",
+                    "name": "CRAFT TRAINING AND DOCUMENTATION"
+                },
+                {
+                    "shortName": "DC",
+                    "name": "DESIGN COLLECTION"
+                },
+                {
+                    "shortName": "SBCS",
+                    "name": "Skills BUSINESS COMMUNICATION SKILLS"
+                },
+                {
+                    "shortName": "AS",
+                    "name": "APTITUDE SKILLS"
+                }
+            ],
+            "module": "regulations"
+        },
+        {
+            "name": "gradeType",
+            "displayName": "Grade Type",
+            "values": [
+                {
+                    "shortName": "AG",
+                    "name": "ABSOLUTE GRADING"
+                },
+                {
+                    "shortName": "RG",
+                    "name": "RELATIVE GRADING"
+                },
+                {
+                    "shortName": "BG",
+                    "name": "BINARY GRADING"
+                }
+            ],
+            "module": "regulations"
+        },
+        {
+            "name": "letterGrade",
+            "displayName": "Letter Grade",
+            "values": [
+                {
+                    "shortName": "O",
+                    "name": "O"
+                },
+                {
+                    "shortName": "A+",
+                    "name": "A+"
+                },
+                {
+                    "shortName": "A",
+                    "name": "A"
+                },
+                {
+                    "shortName": "B+",
+                    "name": "B+"
+                },
+                {
+                    "shortName": "B",
+                    "name": "B"
+                },
+                {
+                    "shortName": "COMPLETED",
+                    "name": "COMPLETED"
+                },
+                {
+                    "shortName": "NOT COMPLETED",
+                    "name": "NOT COMPLETED"
+                }
+            ],
+            "module": "regulations"
+        }
+    ]
+}
+*/

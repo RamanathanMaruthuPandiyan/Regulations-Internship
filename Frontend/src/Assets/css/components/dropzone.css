@@ -1,0 +1,95 @@
+/* Dropzone */
+.dropzone {
+    text-align: center !important;
+    border: 2px dashed #D1D1D1 !important;
+    height: 200px !important;
+    background-color: var(--white) !important;
+}
+
+
+.dropdown-btn {
+    background-color: var(--white) !important;
+    color: var(--primary) !important;
+    border: 1px solid var(--formBorderColor) !important;
+    border-radius: 32px;
+    font-size: 16px !important;
+    margin-top: 48px;
+    font-family: 'inter-bold' !important;
+}
+
+.dropdown-btn:hover {
+    border: 1px solid var(--primary) !important;
+}
+
+.dropzone input {
+    display: none !important;
+}
+
+.dropzone.form-control>p {
+    font-size: 14px;
+    color: var(--lightGray) !important;
+    margin-top: 12px;
+}
+
+.container-dropzone .list-group-item-success ,
+.container-dropzone .list-group-item-danger {
+    display: flex !important;
+    flex-wrap: wrap;
+    background: none !important;
+}
+
+.container-dropzone .list-group-item-success .success-container {
+    font-size: 12px;
+    border: 1px solid var(--success);
+    padding: 8px 10px;
+    margin: 10px 7px 0px 7px;
+    border-radius: 7px;
+    background-color: var(--white);
+        box-shadow: 0px 4px 4px 0px #b5aeae40;
+}
+
+.container-dropzone .list-group-item-success .success-container span{
+        color: var(--success) !important;
+}
+
+.container-dropzone .list-group-item-success .success-container .remove-btn {
+    background: none !important;
+    border: none !important;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.container-dropzone .list-group-item-success .success-container .remove-btn:focus-visible {
+    outline: none !important;
+}
+
+.container-dropzone .list-group-item-success .success-container .remove-icon {
+    border: 1px solid var(--formBorderColor) !important;
+    border-radius: 3px;
+}
+
+.container-dropzone .list-group-item-danger .failure-container {
+    font-size: 12px;
+    border: 1px solid var(--danger);
+    padding: 8px 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+    background-color: var(--alertAbOutlineDanger);
+}
+
+.container-dropzone .dropzone:hover {
+    box-shadow: none !important;
+    border-color: var(--primary) !important;
+    cursor: pointer;
+}
+
+/* Dropzone square */
+.dropdown-btn-square {
+    border-radius: 6px !important;
+}
+
+.dropdown-btn-square span{
+  font-size: 14px !important;
+}

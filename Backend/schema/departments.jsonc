@@ -1,0 +1,15 @@
+{
+    "_id": "", //ObjectId
+    "category": "", //category of department
+    "name": "", //name of the department
+    "status": "" //It denotes the department is active or not.
+}
+//sample record
+/*{
+{
+    "_id": ObjectId("655f3c5ff0b77b56c4c6695d"),
+    "category": "AIDED",
+    "name": "Commerce",
+    "status": "A"
+}
+}*/

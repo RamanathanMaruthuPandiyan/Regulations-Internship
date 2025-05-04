@@ -1,0 +1,708 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,">
+    <title>Email Notification</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+        html {
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            background-color: #CECECE
+        }
+
+        img {
+            display: block !important;
+            border: 0;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        .images {
+            display: block !important;
+            width: 100% !important;
+        }
+
+        .MsoNormal {
+            font-family: Open Sans, Arial, Helvetica Neue, Helvetica, sans-serif !important;
+        }
+
+        p {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .button td,
+        .button a {
+            font-family: Open Sans, Arial, Helvetica Neue, Helvetica, sans-serif !important;
+        }
+
+        .button a:hover {
+            text-decoration: none !important;
+        }
+
+        /* MEDIA QUIRES */
+
+
+        @media only screen and (max-width:640px) {
+            body {
+                width: auto !important;
+            }
+
+            table[class=display-width] {
+                width: 100% !important;
+            }
+
+            table[class=nulltable] {
+                display: none !important;
+            }
+
+            .null {
+                display: none !important;
+            }
+
+            .hide-height {
+                height: 0 !important;
+            }
+
+            .common-height {
+                height: 40px !important;
+            }
+
+            .hide {
+                display: none !important;
+            }
+
+            .remove {
+                border: none !important;
+            }
+
+            .choose {
+                padding-right: 0 !important;
+            }
+
+            .remove-bar {
+                display: none !important;
+            }
+
+            .phone {
+                width: 55% !important;
+            }
+
+            .follow {
+                width: 15px !important;
+            }
+
+            .resp-image {
+                margin: 0 auto !important;
+            }
+
+            .resp-content {
+                text-align: center !important;
+            }
+        }
+
+        @media only screen and (max-width:480px) {
+            table[class=display-width] table {
+                width: 100% !important;
+            }
+
+            table[class=display-width] .button-width .button {
+                width: auto !important;
+            }
+
+            .menu {
+                font-size: 12px !important;
+            }
+
+            table[class=display-width] .phone {
+                width: 55% !important;
+            }
+
+            .fieldleft {
+                text-align: left !important;
+            }
+        }
+
+        @media only screen and (max-width:350px) {
+            table[class=display-width] .phone {
+                width: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body marginwidth="0" marginheight="0"
+    style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;"
+    offset="0" topmargin="0" leftmargin="0">
+    <table data-module="Header Menu" data-bgcolor="Main BG" class="" width="100%" cellspacing="0" cellpadding="0"
+        border="0" bgcolor="#CECECE" align="center">
+        <tr>
+            <td align="center">
+                <table class="display-width" data-bgcolor="Header Menu BG" width="680" cellspacing="0" cellpadding="0"
+                    border="0" bgcolor="#FFFFFF" align="center">
+                    <tr>
+                        <td style="padding:0 30px;" align="center">
+                            <table class="display-width" width="600" cellspacing="0" cellpadding="0" border="0"
+                                align="center">
+                                <tr>
+                                    <td height="15"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <table class="display-width" width="100%" cellspacing="0" cellpadding="0"
+                                            border="0" align="center">
+                                            <tr>
+                                                <td>
+                                                    <table class="display-width"
+                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                        width="25%" cellspacing="0" cellpadding="0" border="0"
+                                                        align="left">
+                                                        <tr>
+                                                            <td valign="middle" align="center"><a href="#"
+                                                                    style="color:#ffffff;text-decoration:none;"> <img
+                                                                        src={{this.logoUrl}} alt={{this.brandName}}
+                                                                        width="250" height="41"> </a></td>
+                                                        </tr>
+                                                    </table>
+                                                    <table
+                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                        width="1" cellspacing="0" cellpadding="0" border="0"
+                                                        align="left">
+                                                        <tr>
+                                                            <td style="line-height:20px;" width="1" height="20"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="15"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table data-bgcolor="Main BG" class="" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#CECECE"
+        align="center">
+        <tr>
+            <td align="center">
+                <table class="display-width" data-bgcolor="Section-Outer BG" width="680" cellspacing="0" cellpadding="0"
+                    border="0" bgcolor="#F8F8F8" align="center">
+                    <tr>
+                        <td style="padding:0 30px;" data-border-bottom-color="Dotted Border" align="center">
+                            <table class="display-width" width="600" cellspacing="0" cellpadding="0" border="0"
+                                align="center">
+                                <tr>
+                                    <td align="center">
+                                        <table class="display-width" width="100%" cellspacing="0" cellpadding="0"
+                                            border="0" align="center">
+                                            <tr>
+                                                <td height="40"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="MsoNormal"
+                                                    style="color:#2D407D;font-family:'Segoe UI',sans-serif,Arial,Helvetica,Lato;font-size:18px;font-weight:700;letter-spacing:1px;line-height:26px;text-transform:uppercase;"
+                                                    data-color="Heading" data-size="Heading" data-min="12" data-max="36"
+                                                    align="center">{{this.header}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <table class="display-width" width="100%" cellspacing="0"
+                                                        cellpadding="0" border="0" align="center">
+                                                        <tr>
+                                                            <td height="30"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="MsoNormal"
+                                                                style="color:#333333;font-family:'Segoe UI',sans-serif,Arial,Helvetica,Lato;font-size:18px;font-weight:600;letter-spacing:1px;line-height:18px;text-transform:capitalize;"
+                                                                data-color="Heading" data-size="Heading" data-min="12"
+                                                                data-max="36" align="left"> DEAR
+                                                                {{this.name}}, </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="20"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <table class="display-width" width="100%%"
+                                                                    cellspacing="0" cellpadding="0" border="0"
+                                                                    align="left">
+                                                                    <tr>
+                                                                        <td class="MsoNormal"
+                                                                            style="color:#666666;font-family:'Segoe UI',sans-serif,Arial,Helvetica,Lato;font-size:13px;line-height:24px;"
+                                                                            data-color="Intro Content"
+                                                                            data-size="Intro Content" data-min="12"
+                                                                            data-max="30" align="left">{{this.message}}
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="30"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center">
+                                                                <table class="display-width" width="100%"
+                                                                    cellspacing="0" cellpadding="0" border="0"
+                                                                    align="center">
+                                                                    <tr>
+                                                                        <td width="600">
+                                                                            <table
+                                                                                style="border-radius:3px; border:1px solid #DDDDDD;"
+                                                                                data-border-top-color="Content-Table Border"
+                                                                                data-border-right-color="Content-Table Border"
+                                                                                data-border-bottom-color="Content-Table Border"
+                                                                                data-border-left-color="Content-Table Border"
+                                                                                width="100%" cellspacing="0"
+                                                                                cellpadding="0" border="0"
+                                                                                align="center">
+                                                                                <tr>
+                                                                                    <td style="padding:0 30px; border-radius:3px;"
+                                                                                        data-bgcolor="Section-Inner BG"
+                                                                                        bgcolor="#ffffff"
+                                                                                        align="center">
+                                                                                        <table width="100%"
+                                                                                            cellspacing="0"
+                                                                                            cellpadding="0" border="0"
+                                                                                            align="center">
+                                                                                            <tr>
+                                                                                                <td height="30"></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td><!-- TABLE LEFT -->
+
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="31%"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="left">
+                                                                                                        <tr>
+                                                                                                            <td class="MsoNormal fieldleft"
+                                                                                                                style="color:#444444; font-family:'Segoe UI', Helvetica Neue, Arial, Verdana, Trebuchet MS, sans-serif; font-size:14px; font-weight:700; line-height:24px; letter-spacing:1px;"
+                                                                                                                data-color="Email-Headers"
+                                                                                                                data-size="Email-Headers"
+                                                                                                                data-min="10"
+                                                                                                                data-max="26"
+                                                                                                                align="right">
+                                                                                                                Regulation:
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="1"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="left">
+                                                                                                        <tr>
+                                                                                                            <td width="1"
+                                                                                                                height="10">
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+
+                                                                                                    <!-- TABLE RIGHT -->
+
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="64%"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="right">
+                                                                                                        <tr>
+                                                                                                            <td class="MsoNormal"
+                                                                                                                style="color:#666666; font-family:'Segoe UI', Helvetica Neue, Arial, Verdana, Trebuchet MS, sans-serif; font-size:13px; font-weight:400; line-height:22px; letter-spacing:1px;"
+                                                                                                                data-color="Email-Contents"
+                                                                                                                data-size="Email-Contents"
+                                                                                                                data-min="10"
+                                                                                                                data-max="26"
+                                                                                                                align="left">
+                                                                                                                <strong>{{this.year}}
+                                                                                                                    -
+                                                                                                                    {{this.version}}-{{this.title}}</strong>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="20"></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="31%"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="left">
+                                                                                                        <tr>
+                                                                                                            <td class="MsoNormal fieldleft"
+                                                                                                                style="color:#444444; font-family:'Segoe UI', Helvetica Neue, Arial, Verdana, Trebuchet MS, sans-serif; font-size:14px; font-weight:700; line-height:24px; letter-spacing:1px;"
+                                                                                                                data-color="Email-Headers"
+                                                                                                                data-size="Email-Headers"
+                                                                                                                data-min="10"
+                                                                                                                data-max="26"
+                                                                                                                align="right">
+                                                                                                                Programme:
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="1"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="left">
+                                                                                                        <tr>
+                                                                                                            <td width="1"
+                                                                                                                height="10">
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+
+                                                                                                    <!-- TABLE RIGHT -->
+
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="64%"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="right">
+                                                                                                        <tr>
+                                                                                                            <td class="MsoNormal"
+                                                                                                                style="color:#666666; font-family:'Segoe UI', Helvetica Neue, Arial, Verdana, Trebuchet MS, sans-serif; font-size:13px; font-weight:400; line-height:22px; letter-spacing:1px;"
+                                                                                                                align="left">
+                                                                                                                <strong>{{this.programme}}
+                                                                                                                    -
+                                                                                                                    {{this.category}}
+                                                                                                                    -
+                                                                                                                    {{this.type}}
+                                                                                                                    -
+                                                                                                                    {{this.mode}}</strong>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="20"></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td><!-- TABLE LEFT -->
+
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="31%"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="left">
+                                                                                                        <tr>
+                                                                                                            <td class="MsoNormal fieldleft"
+                                                                                                                style="color:#444444; font-family:'Segoe UI', Helvetica Neue, Arial, Verdana, Trebuchet MS, sans-serif; font-size:14px; font-weight:700; line-height:24px; letter-spacing:1px;"
+                                                                                                                data-color="Email-Headers"
+                                                                                                                data-size="Email-Headers"
+                                                                                                                data-min="10"
+                                                                                                                data-max="26"
+                                                                                                                align="right">
+                                                                                                                Updated
+                                                                                                                By:
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="1"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="left">
+                                                                                                        <tr>
+                                                                                                            <td width="1"
+                                                                                                                height="10">
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+
+                                                                                                    <!-- TABLE RIGHT -->
+
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="64%"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="right">
+                                                                                                        <tr>
+                                                                                                            <td class="MsoNormal"
+                                                                                                                style="color:#666666; font-family:'Segoe UI', Helvetica Neue, Arial, Verdana, Trebuchet MS, sans-serif; font-size:13px; font-weight:400; line-height:22px; letter-spacing:1px;"
+                                                                                                                data-color="Email-Contents"
+                                                                                                                data-size="Email-Contents"
+                                                                                                                data-min="10"
+                                                                                                                data-max="26"
+                                                                                                                align="left">
+                                                                                                                <strong>{{this.facultyId}}</strong>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            {{!-- {{/isExists}} --}}
+                                                                                            {{#isExists reason}}
+                                                                                            <tr>
+                                                                                                <td><!-- TABLE LEFT -->
+
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="31%"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="left">
+                                                                                                        <tr>
+                                                                                                            <td class="MsoNormal fieldleft"
+                                                                                                                style="color:#444444; font-family:'Segoe UI', Helvetica Neue, Arial, Verdana, Trebuchet MS, sans-serif; font-size:14px; font-weight:700; line-height:24px; letter-spacing:1px;"
+                                                                                                                data-color="Email-Headers"
+                                                                                                                data-size="Email-Headers"
+                                                                                                                data-min="10"
+                                                                                                                data-max="26"
+                                                                                                                align="right">
+                                                                                                                Reason:
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="1"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="left">
+                                                                                                        <tr>
+                                                                                                            <td width="1"
+                                                                                                                height="10">
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+                                                                                                    <table
+                                                                                                        style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                                                        width="64%"
+                                                                                                        cellspacing="0"
+                                                                                                        cellpadding="0"
+                                                                                                        border="0"
+                                                                                                        align="right">
+                                                                                                        <tr>
+                                                                                                            <td class="MsoNormal"
+                                                                                                                style="color:#666666; font-family:'Segoe UI', Helvetica Neue, Arial, Verdana, Trebuchet MS, sans-serif; font-size:13px; font-weight:400; line-height:22px; letter-spacing:1px;"
+                                                                                                                data-color="Email-Contents"
+                                                                                                                data-size="Email-Contents"
+                                                                                                                data-min="10"
+                                                                                                                data-max="26"
+                                                                                                                align="left">
+                                                                                                                <strong>{{{this.reason}}}</strong>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="20"></td>
+                                                                                            </tr>
+                                                                                            {{/isExists}}
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left">
+                                                    <table class="display-width" width="100%" cellspacing="0"
+                                                        cellpadding="0" border="0" align="left">
+                                                        <tr>
+                                                            <td class="MsoNormal"
+                                                                style="color:#666666;font-family:'Segoe UI',sans-serif,Arial,Helvetica,Lato;font-size:13px;line-height:24px;"
+                                                                align="left"> Please login to the <a
+                                                                    href={{this.url}}>Regulations and Schemes</a> to
+                                                                view the
+                                                                changes.</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#CECECE" align="center">
+        <tr>
+            <td align="center">
+                <table class="display-width" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center">
+                            <table class="display-width" data-bgcolor="Footer BG" width="680" cellspacing="0"
+                                cellpadding="0" border="0" bgcolor="#FFFFFF" align="center">
+                                <tr>
+                                    <td style="padding:0 30px;" align="center">
+                                        <table class="display-width" width="600" cellspacing="0" cellpadding="0"
+                                            border="0" align="center">
+                                            <tr>
+                                                <td align="center">
+                                                    <table class="display-width" width="100%" cellspacing="0"
+                                                        cellpadding="0" border="0" align="center">
+                                                        <tr>
+                                                            <td height="30"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><!-- TABLE LEFT -->
+
+                                                                <table class="display-width"
+                                                                    style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;width:auto;"
+                                                                    width="100%" cellspacing="0" cellpadding="0"
+                                                                    border="0" align="left">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table class="display-width"
+                                                                                style="width:auto !important;"
+                                                                                width="100%" cellspacing="0"
+                                                                                cellpadding="0" border="0"
+                                                                                align="center">
+                                                                                <tr>
+                                                                                    <td class="MsoNormal"
+                                                                                        style="color:#666666;font-family:'Segoe UI',sans-serif,Arial,Helvetica,Lato;font-size:14px;letter-spacing:1px;line-height:24px;"
+                                                                                        data-color="Copyright"
+                                                                                        data-size="Copyright"
+                                                                                        data-min="10" data-max="26"
+                                                                                        align="left"> Copyright ©
+                                                                                        {{this.currentYear}},
+                                                                                        <a href="https://www.psgsoftwaretechnologies.com/"
+                                                                                            target="_blank">PSG Software
+                                                                                            Technologies</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table
+                                                                    style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                                                    width="1" cellspacing="0" cellpadding="0" border="0"
+                                                                    align="left">
+                                                                    <tr>
+                                                                        <td style="line-height:20px;" width="1"
+                                                                            height="20"></td>
+                                                                    </tr>
+                                                                </table>
+
+                                                                <!-- TABLE RIGHT -->
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div id="edit_link" class="hidden" style="display: none;">
+
+        <!-- Close Link -->
+        <div class="close_link"></div>
+
+        <!-- Edit Link Value -->
+        <input id="edit_link_value" class="createlink" placeholder="Your URL" type="text">
+
+        <!-- Change Image Wrapper-->
+        <div id="change_image_wrapper">
+
+            <!-- Change Image Tooltip -->
+            <div id="change_image">
+
+                <!-- Change Image Button -->
+                <p id="change_image_button">Change &nbsp; <span class="pixel_result"></span></p>
+            </div>
+
+            <!-- Change Image Link Button -->
+            <input value="" id="change_image_link" type="button">
+
+            <!-- Remove Image -->
+            <input value="" id="remove_image" type="button">
+        </div>
+
+        <!-- Tooltip Bottom Arrow-->
+        <div id="tip"></div>
+    </div>
+</body>
+
+</html>

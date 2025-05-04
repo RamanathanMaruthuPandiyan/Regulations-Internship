@@ -1,0 +1,45 @@
+{
+    "_id": "", //ObjectId
+    "name": "", //grade pattern name to be shown in UI ( only to identify grade pattern)
+    "gradeType": "", //to be fetched from lookups
+    "courseType": "", //to be fetched from lookups
+    "grades": [
+        {
+            "letter": "", //to be fetched from lookups letterGrade attribute,
+            "min": 1, //Number
+            "max": 1, //Number
+            "point": 1 //Number
+        }
+    ]
+}
+/*
+    name must be unique
+    type & grades must be unique (composite primary key)
+
+
+    Sample Record : {
+        "name" : "Absolute2024_V1",
+        "gradeType" : "Absolute",
+        "courseType": "Theory",
+        "grades" : [
+            {
+                "letter" : "O",
+                "min" : 91,
+                "max" : 100,
+                "point" : 10
+            },
+            {
+                "letter": "A+",
+                "min": 81,
+                "max": 90,
+                "point": 9
+            },
+            {
+                "letter": "RA",
+                "min": 0,
+                "max": 50,
+                "point": 0
+            }
+        ]
+    }
+*/

@@ -1,0 +1,60 @@
+{
+    "_id": "", //ObjectId
+    "batchYearId": "", //ObjectId
+    "regulation": {
+        "title": "",
+        "year": "",
+        "version": 1, //Number
+        "id": "" //ObjectId
+    },
+    "prgm": {
+        "id": "", //ObjectId
+        "category": "", //category of programme
+        "duration": 4, //duration of the programme
+        "mode": "", //mode of the programme
+        "name": "", //name of programme
+        "shortName": "", //shortname of the programme
+        "stream": "", //stream of the programme
+        "type": "" //type of the programme
+    },
+    "dept": {
+        "id": "", //ObjectId
+        "name": "", //name of the department
+        "category": "" //category of the department
+    },
+    "prgmRegulationId": "", //ObjectId
+    "semester": 1, //Number
+    "batchYear": 1, //Number
+    "sectionName": ""
+}
+/*
+    Sample Record : {
+        "_id": ObjectId("66fa22075e118ad134b6a8c7"),
+        "batchYearId": ObjectId("65c212b94b92b704b1d96466"),
+        "regulation": {
+            "title": "For civil and ECE",
+            "year": "2024",
+            "version": 3,
+            "id": ObjectId("66f7900dfc0bdc25d3d6cdac")
+        },
+        "prgm": {
+            "id": ObjectId("649e92d49bde6459dcbf9ecb"),
+            "category": "SELF-SUPPORTING",
+            "name": "BE CIVIL ENGINEERING",
+            "shortName": "BECIVILENGG",
+            "type": "UG",
+            "mode": "REGULAR",
+            "duration": 4,
+            "stream": "ENGINEERING"
+        },
+        "dept": {
+            "id": ObjectId("649e928e9bde6459dcbf9ec9"),
+            "name": "CIVIL ENGINEERING",
+            "category": "SELF-SUPPORTING"
+        },
+        "prgmRegulationId": ObjectId("66f78fbafc0bdc25d3d6cda6"),
+        "semester": 1,
+        "batchYear": 2023,
+        "sectionName": "A"
+    }
+*/

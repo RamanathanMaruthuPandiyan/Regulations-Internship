@@ -1,0 +1,74 @@
+{
+    "_id": "", //ObjectId
+    "regulationId": "", //ObjectId
+    "prgm": {
+        "id": "", //ObjectId
+        "category": "", //category of programme
+        "duration": 4, //duration of the programme
+        "mode": "", //mode of the programme
+        "name": "", //name of programme
+        "shortName": "", //shortname of the programme
+        "stream": "", //stream of the programme
+        "type": "" //type of the programme
+    },
+    "dept": {
+        "id": "", //ObjectId
+        "name": "", //name of the department
+        "category": "" //category of the department
+    },
+    "po": {},
+    "peo": [],
+    "pso": [],
+    "freeze": [],
+    "verticals": [],
+    "poStatus": "", //DR, RC, AP
+    "minCredits": {
+        "regular": 1, //Number
+        "lateral": 1 //Number
+    },
+    "courseCodeSubStr": "" // Input
+}
+/*
+    Sample Record : {
+        "_id": ObjectId("66d82a57b2046abeb9b964b2"),
+        "regulationId": ObjectId("66d82a57b2046abeb9b964b1"),
+        "prgm": {
+            "id": ObjectId("649e7e0c9bde6459dcbf9ebc"),
+            "category": "SELF-SUPPORTING",
+            "name": "BE MECHANICAL ENGINEERING",
+            "shortName": "BEMECHENGG",
+            "type": "UG",
+            "mode": "REGULAR",
+            "duration": 4,
+            "stream": "ENGINEERING"
+        },
+        "dept": {
+            "id": ObjectId("649e7b689bde6459dcbf9eba"),
+            "name": "MECHANICAL ENGINEERING",
+            "category": "SELF-SUPPORTING"
+        },
+        "poStatus": "AP",
+        "freeze": [
+            1,
+            3,
+            2,
+            4,
+            6,
+            5,
+            7
+        ],
+        "verticals": [
+            "SFSF",
+            "SSS"
+        ],
+        "peo": [
+            "1"
+        ],
+        "po": {
+            "PO1": "1"
+        },
+        "pso": [
+            "1"
+        ]
+    }
+*/

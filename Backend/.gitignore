@@ -1,0 +1,8 @@
+node_modules/
+log/
+/package-lock.json
+/config/
+/routes/integrations/
+/middleware/
+/services/integrations/
+/services/remote/

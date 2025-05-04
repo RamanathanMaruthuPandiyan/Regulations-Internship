@@ -1,0 +1,26 @@
+{
+    "_id": "", //ObjectId"
+    "name": "", //credit pattern name to be shown in UI ( only to identify pattern) - auto computed
+    "hoursPerWeek": {
+        "lecture": 1, //Number
+        "tutorial": 1, //Number
+        "practical": 1 //Number
+    },
+    "credits": 1 //Number
+}
+/*
+    name must be unique
+    pattern must be unique
+
+
+    Sample Record : {
+        "_id" :  ObjectId("659d7e057015b2045e1b0e22"),
+        "name" : "LTPC_3204",
+        "hoursPerWeek": {
+            "lecture": 3
+            "tutorial": 2
+            "practical": 0
+        },
+        credits : 4
+    }
+*/

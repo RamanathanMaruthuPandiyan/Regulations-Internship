@@ -1,0 +1,43 @@
+{
+    "_id": "", //ObjectId
+    "year": 1, //Number
+    "version": 1, //Number
+    "title": "", //Any remarks or notes about the entry
+    "status": "", //D,V,F
+    "gradeIds": [ //list of grading systems followed in this regulations
+        "", //ObjectId()"
+        "" //ObjectId()"
+    ],
+    "evaluationIds": [ //list of evaluation patterns followed in this regulations
+        "", //ObjectId()"
+        "" //ObjectId()"
+    ],
+    "creditIds": [], //ObjectId of credit Assignment
+    "attachment": { //It is the PDF attachmment for the regulation.
+        "url": "",
+        "contentType": "",
+        "originalname": ""
+    }
+}
+/*
+    Sample Record : {
+        "year":2023,
+        "version" : 1,
+        "title" : "five year integrated msc degree programmes"
+        "status": "D",
+        "gradeIds": [
+            ObjectId("659d7e057015b2045e1b0e22"),
+            ObjectId("659d7e057015b2045e1b0e22")
+        ],
+        "evaluationIds": [
+            ObjectId("659d7e057015b2045e1b0e22"),
+            ObjectId("659d7e057015b2045e1b0e22")
+        ],
+        "creditIds": [ObjectId("659d7e057015b2045e1b0e22")],
+        "attachment": {
+            "url": "regulations-PSGITECH/application/pdf/d8c99241-c3aa-48b9-a2f6-096db2774e642024-09-04T09:37:22.234Z.pdf",
+            "contentType": "application/pdf",
+            "originalname": "Scheme and syllabus-2018.pdf"
+        }
+    }
+*/

@@ -1,0 +1,33 @@
+{
+    "_id": "", //ObjectId
+    "category": "", //category of programme
+    "duration": 4, //duration of the programme
+    "mode": "", //mode of the programme
+    "name": "", //name of programme
+    "shortName": "", //shortname of the programme
+    "stream": "", //stream of the programme
+    "type": "", //type of the programme
+    "dept": {
+        "id": "", //id of the department
+        "name": "", //name of department
+        "category": "" //category of programme
+    },
+    "status": "" //It denotes the department is active or not.
+}
+//sample record
+/*{
+    "_id": ObjectId("655f44eff0b77b56c4c66983"),
+    "category": "AIDED",
+    "duration": 3,
+    "mode": "REGULAR",
+    "name": "B.Sc Biochemistry",
+    "shortName": "BBC",
+    "stream": "SCIENCE",
+    "type": "UG",
+    "dept": {
+        "id": ObjectId("659d7e057015b2045e1b0e22"),
+        "name": "Botany",
+        "category": "AIDED"
+    },
+    "status": "A"
+}*/

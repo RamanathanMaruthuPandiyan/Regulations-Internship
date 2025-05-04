@@ -1,0 +1,277 @@
+{
+    "id": "", //ObjectId
+    "name": "", //to identify pattern uniquely
+    "courseType": "", //"theory courses","practical courses","craft training and documentation"
+    "distributionType": "", // CA, FE, BOTH
+    "markSplitUp": {
+        "CA": { //Actual and Scaled - Continuous Assessment marks
+            "actual": 1,
+            "scaled": 1
+        },
+        "FE": { //Actual and Scaled - Final Examination marks
+            "actual": 1,
+            "scaled": 1
+        },
+        "total": 1 //Number - Total marks
+    },
+    "CA_Components": [
+        {
+            "name": "", // "assesment", "project work" , "internal tests
+            "marks": {
+                "actual": 1, //Number
+                "scaled": 1, //Number
+                "mode": "", // AVERAGE,BEST,SUM
+                "count": ""
+            },
+            "hasSubComponent": true, //"Boolean" Whether the CA has sub-components
+            "hasConversion": true, //"Boolean" Whether the marks have conversion
+            "sub": [
+                {
+                    "name": "", // e.g., "sub-component 1", "sub-component 2"
+                    "marks": {
+                        "actual": 1, //Number
+                        "scaled": 1 //Number
+                    },
+                    "hasSubComponent": true, //"Boolean" Whether the sub-component has further sub-components
+                    "hasConversion": true //"Boolean" Whether the marks have conversion
+                }
+            ]
+        }
+    ],
+    "FE_Components": [
+        {
+            "name": "Final Exam",
+            "marks": {
+                "actual": 1, //Number
+                "scaled": 1, //Number
+                "mode": "", // AVERAGE,BEST,SUM
+                "count": ""
+            },
+            "hasSubComponent": false,
+            "hasConversion": true,
+            "sub": []
+        }
+    ]
+}
+/*
+sample record 1 : {
+    "name": "CA40_FE624",
+    "courseType": "THEORY",
+    "markSplitUp": {
+        "CA": {
+            "actual": 50,
+            "scaled": 40
+        },
+        "FE": {
+            "actual": 100,
+            "scaled": 60
+        },
+        "total": 100
+    },
+    "distributionType": "BOTH",
+    "CA_Components": [
+        {
+            "name": "Assignment Presentation",
+            "marks": {
+                "actual": 8,
+                "scaled": 8
+            },
+            "hasSubComponent": false,
+            "hasConversion": false,
+            "sub": []
+        },
+        {
+            "name": "Mini Project / Tutorial",
+            "marks": {
+                "actual": 12,
+                "scaled": 12,
+                "mode": "SUM"
+            },
+            "hasSubComponent": true,
+            "hasConversion": false,
+            "sub": [
+                {
+                    "name": "Tutorial 1",
+                    "marks": {
+                        "actual": 6,
+                        "scaled": 6
+                    },
+                    "hasSubComponent": false,
+                    "hasConversion": false,
+                    "sub": []
+                },
+                {
+                    "name": "Tutorial 2",
+                    "marks": {
+                        "actual": 6,
+                        "scaled": 6
+                    },
+                    "hasSubComponent": false,
+                    "hasConversion": false,
+                    "sub": []
+                }
+            ]
+        },
+        {
+            "name": "Internal Tests",
+            "marks": {
+                "actual": 30,
+                "scaled": 30,
+                "mode": "AVERAGE",
+                "count": 2
+            },
+            "hasSubComponent": true,
+            "hasConversion": false,
+            "sub": [
+                {
+                    "name": "Test 1",
+                    "marks": {
+                        "actual": 40,
+                        "scaled": 30
+                    },
+                    "hasSubComponent": false,
+                    "hasConversion": true,
+                    "sub": []
+                },
+                {
+                    "name": "Test 2",
+                    "marks": {
+                        "actual": 40,
+                        "scaled": 30
+                    },
+                    "hasSubComponent": false,
+                    "hasConversion": true,
+                    "sub": []
+                }
+            ]
+        }
+    ],
+    "FE_Components": [
+        {
+            "name": "Final Exam",
+            "marks": {
+                "actual": 100,
+                "scaled": 100
+            },
+            "hasSubComponent": false,
+            "hasConversion": false,
+            "sub": []
+        }
+    ]
+}*/
+/*
+sample record 2:{
+    "_id": ObjectId("66829be4a85a0d120926c5ae"),
+    "name": "CA40_FE625",
+    "courseType": "THEORY",
+    "markSplitUp": {
+        "CA": {
+            "actual": 60,
+            "scaled": 60
+        },
+        "FE": {
+            "actual": 40,
+            "scaled": 40
+        },
+        "total": 100
+    },
+    "distributionType": "BOTH",
+    "CA_Components": [
+        {
+            "name": "Review 1",
+            "marks": {
+                "actual": 30,
+                "scaled": 30
+            },
+            "hasSubComponent": false,
+            "hasConversion": false,
+            "sub": []
+        },
+        {
+            "name": "Review 2",
+            "marks": {
+                "actual": 30,
+                "scaled": 30
+            },
+            "hasSubComponent": false,
+            "hasConversion": false,
+            "sub": []
+        }
+    ],
+    "FE_Components": [
+        {
+            "name": "portfolio",
+            "marks": {
+                "actual": 25,
+                "scaled": 25
+            },
+            "hasSubComponent": false,
+            "hasConversion": false,
+            "sub": []
+        },
+        {
+            "name": "presentation & viva voce",
+            "marks": {
+                "actual": 15,
+                "scaled": 15
+            },
+            "hasSubComponent": false,
+            "hasConversion": false,
+            "sub": []
+        }
+    ]
+}*/
+/*
+sample record 3:{
+    "name": "CA40_FE626",
+    "courseType": "THEORY",
+    "markSplitUp": {
+        "CA": {
+            "actual": 12,
+            "scaled": 12
+        },
+        "FE": {
+            "actual": 0,
+            "scaled": 0
+        },
+        "total": 12
+    },
+    "distributionType": "CA",
+    "CA_Components": [
+        {
+            "name": "Review 1",
+            "marks": {
+                "actual": 12,
+                "scaled": 12,
+                "mode": "BEST",
+                "count": 2
+            },
+            "hasSubComponent": true,
+            "hasConversion": false,
+            "sub": [
+                {
+                    "name": "Tutorial 1",
+                    "marks": {
+                        "actual": 6,
+                        "scaled": 6
+                    },
+                    "hasSubComponent": false,
+                    "hasConversion": false,
+                    "sub": []
+                },
+                {
+                    "name": "Tutorial 2",
+                    "marks": {
+                        "actual": 6,
+                        "scaled": 6
+                    },
+                    "hasSubComponent": false,
+                    "hasConversion": false,
+                    "sub": []
+                }
+            ]
+        }
+    ],
+    "FE_Components": []
+}
+*/
