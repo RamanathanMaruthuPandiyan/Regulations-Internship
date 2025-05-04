@@ -63,9 +63,5 @@ This project is built using the **MERN stack** (MongoDB, Express.js, React.js, N
 ### Programme Scheme
 ![Programme_Scheme](Screenshots/Programme_Scheme.png)
 
-## Usage
-- Access the application at `http://localhost:3000` after starting the development server.
-- Ensure MongoDB is running locally or provide a connection string in the `.env` file.
-
 ## Disclaimer
 This project was developed as part of an internship and is intended for educational purposes only. It may not be production-ready or fully optimized.
